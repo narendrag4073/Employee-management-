@@ -1,5 +1,5 @@
 {
-  "name": "Employee Management App",
+  "name": "employeeApp",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
