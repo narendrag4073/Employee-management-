@@ -38,7 +38,7 @@ class MemberList extends Component {
   render() {
 	  if(this.props.modeType.isList){
     return (
-	  <div className="col-md-6 member-list_top">
+	  <div className="col-md-6 member-list_top col-md-offset-3">
 			<div className="col-md-12 bg-white">
 				<div className = "panel-body " >
 				<i className="glyphicon glyphicon-plus icon-style" onClick={(e)=>this.props.changeMode('IS_ADD', { isAdd:true})}></i>

@@ -6,10 +6,10 @@ let initialState = [{
     email: 'narendrag4073@gmail.com',
     role:'admin'
 },{
-    firstName: 'Narendra',
-    lastName:'Gupta',
+    firstName: 'Lalit ',
+    lastName:'Patel',
     mobile: '8989009172',
-    email: 'narendrag40731@gmail.com',
+    email: 'lalit1@gmail.com',
     role:'regular'
 }]
 

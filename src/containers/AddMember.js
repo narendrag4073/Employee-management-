@@ -8,7 +8,7 @@ class AddMember extends Component {
   render() {
       if(this.props.modeType.isAdd){
         return (
-                <div className="col-md-6 member-list_top">
+                <div className="col-md-6 member-list_top col-md-offset-3">
                     <div className="col-md-12 bg-white">
                         <div className = "panel-body " >
                         <i 

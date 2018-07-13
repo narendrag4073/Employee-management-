@@ -8,7 +8,7 @@ class EditMember extends Component {
   render() {
       if(this.props.modeType.isEdit){
         return (
-                <div className="col-md-6 member-list_top">
+                <div className="col-md-6 member-list_top col-md-offset-3">
                     <div className="col-md-12 bg-white">
                         <div className = "panel-body " >
                         <i 
@@ -110,7 +110,7 @@ class EditMember extends Component {
             
                         <div className="row pb-10">
                             <button 
-                                className="btn btn-default pull-left"
+                                className="btn btn-default pull-left rc"
                                 disabled={this.props.infoForm.role !== 'admin'}
                                 onClick={(e)=>{
                                         e.preventDefault();
