@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeMode, editMember } from '../actions/index';
-import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 
 class MemberList extends Component {
