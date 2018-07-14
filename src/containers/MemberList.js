@@ -9,7 +9,8 @@ class MemberList extends Component {
   renderList() {
     return this.props.members.map((member) => {
       return (
-        <li
+				<li
+					key={member.id}
 					className="col-md-12 member-list-item list"
 					onClick={(e)=>{
 						this.props.changeMode('IS_EDIT', { isEdit: true });
