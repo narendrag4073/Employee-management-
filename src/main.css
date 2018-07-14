@@ -25,7 +25,6 @@
     padding-top: 10px;
     padding-top: 10px;
     border-top: 1px solid #ddd;
-    cursor: pointer;
     
 }
 .name-heading {
@@ -57,6 +56,9 @@
     font-weight: 400;
     color: grey;
     width: 100%;
+    cursor: pointer;
+}
+.list {
     cursor: pointer;
 }
 .list:hover {
