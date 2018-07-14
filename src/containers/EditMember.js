@@ -77,8 +77,8 @@ class EditMember extends Component {
                         <p className="mb-15">
                         
                     <h4>Role</h4>
-                            <div className="pt-10 pb-10 member-list-item role-label-parent">
-                            <label for="roleMobile" className="role-label">Regular Can't Delete
+                            <div className="role-label-parent">
+                            <label for="roleMobile" className="pt-10 pb-10 role-label">Regular Can't Delete
                                 <input 
                                     type="Radio"
                                     name="mobile"
@@ -92,8 +92,8 @@ class EditMember extends Component {
                                 />
                                 </label>
                             </div>
-                            <div className="pt-10 pb-10 member-list-item role-label-parent">
-                            <label for="roleAdmin" className="role-label">Admin Can Delete
+                            <div className=" role-label-parent">
+                            <label for="roleAdmin" className="pt-10 pb-10 role-label">Admin Can Delete
                                 <input 
                                     type="Radio"
                                     name="mobile"

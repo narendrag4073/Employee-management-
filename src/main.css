@@ -67,6 +67,10 @@
     background: #eeeeee40;
     border: 1px solid #0000008c;
 }
+.role-label-parent {
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
 .role-label-parent:hover {
     background: #eeeeee40;
 }
