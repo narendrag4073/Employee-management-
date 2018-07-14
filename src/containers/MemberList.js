@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { changeMode, editMember } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
+
 class MemberList extends Component {
 
   renderList() {
