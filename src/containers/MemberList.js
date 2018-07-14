@@ -15,21 +15,21 @@ class MemberList extends Component {
 						this.props.editMember(member)}
 					}
 				>
-			  <span  className="col-md-1 pl-0">
-				<img 
-					src='https://www.qualiscare.com/wp-content/uploads/2017/08/default-user-300x300.png' alt="No Image" 
-					width="45"
-					/> 
-				</span>
-			<div  className="col-md-11"> 
-				<p className="name-heading mb-5">
-					{member.firstName}&nbsp;{member.lastName} &nbsp;{member.role === 'admin' ? `(${member.role})`: ''}
-				</p>
-				<p className="mb-5 fc-color fs-13">
-					{member.mobile}
-				</p>
-			  	<p className="mb-5 fc-color fs-13">{member.email}</p>
-			</div>
+						<span  className="col-md-1 pl-0">
+								<img 
+									src='https://www.qualiscare.com/wp-content/uploads/2017/08/default-user-300x300.png' alt="No Image" 
+									width="45"
+								/> 
+						</span>
+						<div  className="col-md-11"> 
+								<p className="name-heading mb-5">
+									{member.firstName}&nbsp;{member.lastName} &nbsp;{member.role === 'admin' ? `(${member.role})`: ''}
+								</p>
+								<p className="mb-5 fc-color fs-13">
+									{member.mobile}
+								</p>
+								<p className="mb-5 fc-color fs-13">{member.email}</p>
+						</div>
         </li>
       );
     });
@@ -41,17 +41,15 @@ class MemberList extends Component {
 	  <div className="col-md-6 member-list_top col-md-offset-3">
 			<div className="col-md-12 bg-white">
 				<div className = "panel-body " >
-				<i className="glyphicon glyphicon-plus icon-style" onClick={(e)=>this.props.changeMode('IS_ADD', { isAdd:true})}></i>
+					<i className="glyphicon glyphicon-plus icon-style" onClick={(e)=>this.props.changeMode('IS_ADD', { isAdd:true})}></i>
 					<h3>Team Members</h3>
 					<h5 className="fc-color">You have {this.props.members.length} Members</h5>
 				</div>
-		
-			<ul className="list-group">
-			
-			{this.renderList()}
-			</ul>
-			</div>
-      </div>
+					<ul className="list-group">
+					{this.renderList()}
+					</ul>
+				</div>
+    </div>
     )
   } else {
 	return <div></div>
