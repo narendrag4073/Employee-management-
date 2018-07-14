@@ -65,6 +65,7 @@
     transform: scale(1.05);
     box-shadow: rgb(204, 204, 204) 2px 0px 10px 0px; 
     background: #eeeeee40;
+    border: 1px solid #0000008c;
 }
 .role-label-parent:hover {
     background: #eeeeee40;
