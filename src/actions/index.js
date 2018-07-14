@@ -35,9 +35,9 @@ export function editMember(member){
     payload: member,
   }
 }
-export function deleteMember (firstName){
+export function deleteMember (id){
   return {
     type: 'DELETE_MEMBER',
-    payload: firstName,
+    payload: id,
   }
 }

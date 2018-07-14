@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeMode, editMember } from '../actions/index';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 
 class MemberList extends Component {
@@ -9,12 +10,12 @@ class MemberList extends Component {
     return this.props.members.map((member) => {
       return (
         <li
-		  className="col-md-12 member-list-item"
-		  onClick={(e)=>{
-			  this.props.changeMode('IS_EDIT', { isEdit: true });
-			  this.props.editMember(member)}
-		  }
-		>
+					className="col-md-12 member-list-item list"
+					onClick={(e)=>{
+						this.props.changeMode('IS_EDIT', { isEdit: true });
+						this.props.editMember(member)}
+					}
+				>
 			  <span  className="col-md-1 pl-0">
 				<img 
 					src='https://www.qualiscare.com/wp-content/uploads/2017/08/default-user-300x300.png' alt="No Image" 
@@ -47,7 +48,8 @@ class MemberList extends Component {
 				</div>
 		
 			<ul className="list-group">
-				{this.renderList()}
+			
+			{this.renderList()}
 			</ul>
 			</div>
       </div>

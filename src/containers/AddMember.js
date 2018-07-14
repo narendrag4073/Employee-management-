@@ -77,7 +77,7 @@ class AddMember extends Component {
                                 
                             <h4>Role</h4>
                                     <div className="pt-10 pb-10 member-list-item">
-                                    <label for="roleMobile" className="role-label">Regular Can't Delete</label>
+                                    <label for="roleMobile" className="role-label">Regular Can't Delete
                                         <input 
                                             type="Radio"
                                             name="mobile"
@@ -89,9 +89,10 @@ class AddMember extends Component {
                                                 this.props.handleChange('SET_ROLE', e.target.value)}
                                             }
                                         />
+                                    </label>
                                     </div>
                                     <div className="pt-10 pb-10 member-list-item">
-                                    <label for="roleAdmin" className="role-label">Admin Can Delete</label>
+                                    <label for="roleAdmin" className="role-label">Admin Can Delete
                                         <input 
                                             type="Radio"
                                             name="mobile"
@@ -103,6 +104,8 @@ class AddMember extends Component {
                                                 this.props.handleChange('SET_ROLE', e.target.value)}
                                             }
                                         />
+                                        </label>
+                                        
                                     </div>
                                 
                             </p>

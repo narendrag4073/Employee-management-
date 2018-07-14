@@ -25,6 +25,8 @@
     padding-top: 10px;
     padding-top: 10px;
     border-top: 1px solid #ddd;
+    cursor: pointer;
+    
 }
 .name-heading {
     font-size: 14px;
@@ -54,7 +56,18 @@
 .role-label{
     font-weight: 400;
     color: grey;
+    width: 100%;
+    cursor: pointer;
 }
-
+.list:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: rgb(204, 204, 204) 2px 0px 10px 0px; 
+    background: #eeeeee40;
+}
+.role-label-parent:hover {
+    background: #eeeeee40;
+}
 
 

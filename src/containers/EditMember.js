@@ -77,8 +77,8 @@ class EditMember extends Component {
                         <p className="mb-15">
                         
                     <h4>Role</h4>
-                            <div className="pt-10 pb-10 member-list-item">
-                            <label for="roleMobile" className="role-label">Regular Can't Delete</label>
+                            <div className="pt-10 pb-10 member-list-item role-label-parent">
+                            <label for="roleMobile" className="role-label">Regular Can't Delete
                                 <input 
                                     type="Radio"
                                     name="mobile"
@@ -90,9 +90,10 @@ class EditMember extends Component {
                                         this.props.handleChange('SET_ROLE', e.target.value)}
                                     }
                                 />
+                                </label>
                             </div>
-                            <div className="pt-10 pb-10 member-list-item">
-                            <label for="roleAdmin" className="role-label">Admin Can Delete</label>
+                            <div className="pt-10 pb-10 member-list-item role-label-parent">
+                            <label for="roleAdmin" className="role-label">Admin Can Delete
                                 <input 
                                     type="Radio"
                                     name="mobile"
@@ -104,6 +105,7 @@ class EditMember extends Component {
                                         this.props.handleChange('SET_ROLE', e.target.value)}
                                     }
                                 />
+                                </label>
                             </div>
                         
                     </p>
@@ -111,10 +113,9 @@ class EditMember extends Component {
                         <div className="row pb-10">
                             <button 
                                 className="btn btn-default pull-left rc"
-                                disabled={this.props.infoForm.role !== 'admin'}
                                 onClick={(e)=>{
                                         e.preventDefault();
-                                        this.props.deleteMember(this.props.infoForm.firstName);
+                                        this.props.deleteMember(this.props.infoForm.id);
                                         this.props.changeMode('IS_LIST', { isList : true});
                                         this.props.resetForm();
                                     }
