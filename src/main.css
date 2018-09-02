@@ -1,0 +1,84 @@
+.member-list_top{
+    background: #eeeeeeee;
+    padding: 15px;
+}
+.bg-white {
+    background: white;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pl-0 {
+    padding-left: 0px;
+}
+.p-20 {
+    padding: 20px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.member-list-item {
+    list-style: none;
+    padding-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    
+}
+.name-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000b0;
+}
+.fc-color {
+    color: grey;
+}
+.rc{
+    color: red;
+}
+.fs-13{
+    font-size: 13px;
+}
+.icon-style {
+    float: right;
+    font-weight: 87px;
+    top: 10px;
+    cursor: pointer;
+    color: #0000ffad;
+    font-size: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.role-label{
+    font-weight: 400;
+    color: grey;
+    width: 100%;
+    cursor: pointer;
+}
+.list {
+    cursor: pointer;
+}
+.list:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: rgb(204, 204, 204) 2px 0px 10px 0px; 
+    background: #eeeeee40;
+    border: 1px solid #0000008c;
+}
+.role-label-parent {
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+.role-label-parent:hover {
+    background: #eeeeee40;
+}
+
+.icon-style:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
